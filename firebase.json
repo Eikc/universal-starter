@@ -1,0 +1,35 @@
+{
+  "hosting": {
+    "public": "dist",
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png|js|css)",
+        "headers": [
+          {
+            "key" : "Cache-Control",
+            "value" : "max-age=604800"
+          }
+        ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "/assets/**",
+        "destination": "/assets"
+      },
+      {
+        "source": "/favicon.ico",
+        "destination": "/favicon.ico"
+      },
+      {
+        "source": "**",
+        "function": "ssr"
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

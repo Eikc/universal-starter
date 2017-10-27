@@ -11,6 +11,8 @@ morgan.log
 /dist/
 /dist-server/
 /compiled/
+/functions/node_modules/
+/functions/dist
 
 # Node #
 npm-debug.log
