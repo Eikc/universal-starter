@@ -7,7 +7,7 @@ We're utilizing packages from the [Angular Universal @nguniversal](https://githu
 ---
 This fork of universal is a starter/example of how to use the universal-starter (cli version) with firebase!
 
----
+
 to deploy it to firebase, just replace the --project project-name with a firebase project, and you are ready to go!
 
-Have a lovely day <3
+Have a lovely day :heart:
